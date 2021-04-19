@@ -27,6 +27,7 @@ class StatusSerializerField(serializers.SlugRelatedField):
 
         return OrderedDict(
             [
+                ("id", obj.id),
                 ("value", obj.slug),
                 ("label", str(obj)),
             ]
